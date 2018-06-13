@@ -38,6 +38,23 @@ class certs::params {
   $server_cert_req  = undef
   $server_ca_cert   = undef
 
+  $repomd_gpg                  = undef
+  $repomd_gpg_name             = 'Repository Metadata Signing Key'
+  $repomd_gpg_comment          = undef
+  $repomd_gpg_email            = undef
+  $repomd_gpg_key_type         = '4'
+  $repomd_gpg_key_length       = '4096'
+  $repomd_gpg_expire_date      = '0'
+  $repomd_gpg_use_subkeys      = false
+  $repomd_gpg_sub              = undef
+  $repomd_gpg_sub_key_type     = '4'
+  $repomd_gpg_sub_key_length   = '4096'
+  $repomd_gpg_sub_expire_date  = '0'
+  $repomd_gpg_dir              = '/usr/share/httpd/.gnupg'
+  $repomd_gpg_user             = 'apache'
+  $repomd_gpg_group            = 'apache'
+  $repomd_gpg_pub_file         = 'repomd.gpg'
+
   $foreman_client_cert    = '/etc/foreman/client_cert.pem'
   $foreman_client_key     = '/etc/foreman/client_key.pem'
   # for verifying the foreman proxy https
