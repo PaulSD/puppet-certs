@@ -78,7 +78,7 @@ cert-specific resources:
 For now, the only implemented provider of the type is
 `katello_ssl_tool`. It works as follow:
 
-1. **generation** - the artefact of this phase is an RPM with the keys
+1. **generation** - the artifact of this phase is an RPM with the keys
 for the certificate; the RPMs, as well as other files generated in the
 process, are located in `/root/ssl-build` directory
 
